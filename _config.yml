@@ -1,0 +1,23 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            TechInShanghai
+tagline:          Podcast by host John Vallis
+description:      "Interviews with the people behind Shanghais top startups tech etc.."
+#url:
+#baseurl:         /
+
+author:
+  name:           'Karlo Espiritu'
+  url:            https://twitter.com/karloespiritu
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:

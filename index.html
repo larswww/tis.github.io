@@ -1,0 +1,62 @@
+---
+layout: default
+title: Home
+---
+
+
+<div class="hero">
+<h1>The Tech in Shanghai Podcast is all about speaking with interesting people, who are engaged in the start-up and technology scene in Shanghai. </h1>
+<p>What's happening on the ground in the Shanghai/China technology and start-up scene, through the eyes of the people making it all happen. We keep it casual, letting the various founders, CEO's and MD's tell their version of what it's like to to be involved in the scene of one of the most dynamic and fast growing markets in the world.</p>
+</div>
+
+
+<article class='latest-ep'>
+<h2>Tom Liu of ChinaScope</h2>
+<p>They use machines to sift through an endless amount of data, so investors can use only the most relevant decision-making insights. As Tom proudly describes, it’s a major step towards levelling the playing field between the ‘old boys’ of the financial world, and the average retail investor.</p>
+<a href='#'>More..</a>
+</article>
+
+<div class='episodes'>
+  {% for post in site.posts %}
+  <article class='episodes'>
+  <img src='{{ site.baseurl }}public/images/logos/{{ post.logo }}'>
+  <h3 class='post-title'> {{ post.title }}</h3>
+  <p>
+    <span class='guest'>{{ post.guest }}</span>{{ post.description }}
+  </p>
+  <ul>
+    <li>
+      {{ post.date }}
+    </li>
+    <li>
+      {{ post.time }}
+    </li>
+    <li>
+      <a href='{{ site.baseurl }}{{ post.url | remove_first: '/'}}'>Play Episode</a>
+    </li>
+  </ul>
+
+  </article>
+  {% endfor %}
+</div>
+
+
+
+
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
