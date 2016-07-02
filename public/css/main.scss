@@ -1,0 +1,61 @@
+---
+
+---
+// Colors
+$main: #fff;
+$sidebarColor: grey;
+
+
+body {
+  background-color: $main;
+}
+
+.sidebar {
+  background-color: $sidebarColor;
+}
+
+.logo {
+  background: url(../images/tech-in-shanghai-logo.png);
+  text-indent: -9999px;
+  display: block;
+  width:200px;
+  height: 92px;
+}
+
+
+
+// episode list
+
+
+// group clearfix
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+clear: both;
+}
+.group {
+zoom: 1; /* IE6&7 */ }
+
+
+article.episodes {
+  display: block;
+  img {
+    float: left;
+  }
+  .crop {
+    height: 100px;
+    width: 150px;
+    overflow: hidden;
+    img {
+      height: auto;
+      width: 130px;
+    }
+  }
+
+  li {
+    display: inline-block;
+  }
+
+}

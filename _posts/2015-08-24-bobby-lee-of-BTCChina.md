@@ -1,5 +1,6 @@
 ---
 layout: post
+logo: btc-china-logo.jpeg
 title: Bobby Lee of BTCChina
 ---
 In this episode we speak with Bobby Lee, Co-founder and CEO of BTC China, one of the world’s largest and most trusted Bitcoin exchanges (and more as it turns out!).

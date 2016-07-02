@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Vvivi Hu of eBay
-logo: logos/ebay-logo.png
+alt: ebay logo
+logo: ebay-logo.jpeg
 guest: Vvivi Hu
 description: On the differences between Chinese and Western tech entrepreneurs and experience from one of the first western tech companies to launch in China
 guestURL: www.ebay.cn

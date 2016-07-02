@@ -2,6 +2,7 @@
 layout: post
 title: Erika Walenza-Slabe of Startup Grind
 logo: startup-grind-logo.jpeg
+description: evoted to promoting the adoption of industrial internet solutions. I wanted to have Erik on the show, not only for the interesting work he is doing, and the unique experiences he has compiled during his time in China, but also because as Director of Startup Grind, he is very-much plugged in to the startup community in Shanghai. Unsurprisingly, Erik tells me that the interest in joining the events he organizes and hosts has grown tremendously over the past couple years, and I probe him for some insight into what kind of people are attending, and what they are hoping to gain by doing so. We also delve in to his latest project, IoT One, and have some fun speculating on what the future holds for an increasingly c
 guest: Erik Walenza-Slabe
 description: The future of the increasingly connected world, startups in China and how to get started in China
 guestURL: www.startupgrind.com/shanghai/

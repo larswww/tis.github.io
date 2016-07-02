@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Zennon Kapron of Kapron Asia
-logo: kapron-asia-logo.png
+logo: kapron-asia-logo.jpeg
+description: uch so that he recently authored a book titled ‘Chomping at the Bitcoin’ which gives the first EXCLUSIVE analysis of China’s role in the ongoing Bitcoin saga. In addition to geeking out on Bitcoin, Zennon and I talk about other innovation happening in the financial industry in China and around the world. We discussed the increasingly influential role of the large tech companies, primarily Baidu, Alibaba and Tencent and their role in reshaping the banking, investing and payments landscape (and in fact how such innovation may actually slow Bitcoin’s adoption). Zennon also shared with me that it was in fact Blockchain, not Bitcoin, that has been getting all the attention from the mainstream financial community these 
 guestURL: www.kapronasia.com
 episode: 20
 date: 20/1/2016

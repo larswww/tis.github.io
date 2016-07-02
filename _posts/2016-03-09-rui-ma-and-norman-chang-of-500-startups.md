@@ -2,6 +2,7 @@
 layout: post
 title: Rui Ma and Norman Chang of 500 Startups
 logo: 500-startups-logo.png
+description: notable absence of guests that fall in to the ‘investor’ category.  With fundraising often being a crucial component of the startup process, I’ve been wanting to speak with an investor for a while now, to get a perspective from the other side of the negotiating table. As it turns out, I literally could not have found a more appropriate guest, as in 2015, 500 startups 
 iTunes: https://itunes.apple.com/ca/podcast/tech-in-shanghai/id882343718#
 guestTwitter: twitter.com/ruima
 guestURL: www.500.co

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sebastien Gaudin of The CareVoice
-logo: logos/thecarevoice-logo.png
+logo: thecarevoice-logo.png
 guestURL: www.thecarevoice.com
 episode: 20
 date: 01/10/2015
