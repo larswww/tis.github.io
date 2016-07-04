@@ -2,16 +2,49 @@
 
 ---
 // Colors
+
+$dark: #2B2D42;
+$green: #8D99AE;
+$light: #EDF2F4;
+$logoPink: #ED1212;
+$pink: #D90429;
+
 $main: #fff;
 $sidebarColor: grey;
 
 
+html {
+  font-family: 'PT Serif', serif;
+
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $pink;
+font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+& a {
+  color: $pink;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+}
+
+
 body {
+  color: $dark;
   background-color: $main;
 }
 
 .sidebar {
-  background-color: $sidebarColor;
+  color: $main;
+  background-color: $dark;
+  background-image: url(../images/sidebar-tile.png);
+  & a {
+    color: $main;
+  }
+
+  & i {
+    margin-right: 5px;
+  }
 }
 
 .logo {
@@ -22,6 +55,12 @@ body {
   height: 92px;
 }
 
+a {
+  color: $pink;
+  &:hover {
+    color: $logoPink;
+  }
+}
 
 
 // episode list

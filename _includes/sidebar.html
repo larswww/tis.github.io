@@ -6,33 +6,23 @@
         </a>
       <p class="lead">{{ site.description }}</p>
     </div>
-
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
-
-      {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
-
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-        {% if node.title != null %}
-          {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url  | remove_first: '/' }}">{{ node.title }}</a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+      <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/master.zip"><i class="fa fa-cloud-download" aria-hidden="true"></i>Download</a>
+      <a class='sidebar-nav-item' href='#'><i class="fa fa-weixin" aria-hidden="true"></i>WeChat</a>
+      <a class='sidebar-nav-item' href='#'><i class="fa fa-envelope" aria-hidden="true"></i>john@techinshanghai.com</a>
+      <a class='sidebar-nav-item' href='#'><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a>
+      <a class='sidebar-nav-item' href='#'><i class="fa fa-twitter-square" aria-hidden="true"></i>@techinshanghai</a>
 
 
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/master.zip">Download</a>
+
+
       <hr>
       <a href="#">
-      <img src="{{ site.baseurl }}public/images/get-on-itunes.svg" alt="subscribe on iTunes" />
+      <img src="{{ site.baseurl }}/public/images/get-on-itunes.svg" alt="subscribe on iTunes" />
 </a>
 
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+
     </nav>
 
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>

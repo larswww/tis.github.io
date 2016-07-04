@@ -8,12 +8,12 @@ permalink:        pretty
 # Setup
 title:            TechInShanghai
 tagline:          Podcast by host John Vallis
-description:      "Interviews with the people behind Shanghais top startups tech etc.."
-#url:
-#baseurl:         /
+description:      "PODCAST INTERVIEWS WITH THE PEOPLE BEHIND IT ALL"
+url:
+baseurl:         ""
 
 author:
-  name:           'Karlo Espiritu'
+  name:           'John Vallis'
   url:            https://twitter.com/karloespiritu
 
 # Custom vars
