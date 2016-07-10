@@ -14,15 +14,33 @@
     {% endif %}
   </title>
 
+
+{% if page.layout == 'post' %}
+<meta property='og:url' content='{{ site.url }}{{ page.url }}' />
+<meta property='og:description' content='{{ page.description }}' />
+
+{% if page.mainImage %}
+<meta propety='og:image' content='{{ site.url }}public/images/{{page.mainImage}}' />
+{% else %}
+<meta propety='og:image' content='{{ site.url }}public/images/logos/{{page.logo}}' />
+{% endif %}
+
+<meta property='og:title' content='TechInShanghai Podcast: {{ page.title }}' />
+<meta property='og:audio' content="{{ page.episodeLink }}" />
+<meta property='og:audio:type' content='audio/mpeg' />
+
+
+{% endif %}
+
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/blackdoc.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/main.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/blackdoc.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/main.css">
   <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=PT+Serif'>
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico">
 
 <script src="https://use.fontawesome.com/7fa54cf23e.js"></script>
 

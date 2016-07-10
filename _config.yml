@@ -8,9 +8,9 @@ permalink:        pretty
 # Setup
 title:            TechInShanghai
 tagline:          Podcast by host John Vallis
-description:      "PODCAST INTERVIEWS WITH THE PEOPLE BEHIND IT ALL"
+description:      "PODCASTS WITH THE LEADERS BEHIND"
 url:
-baseurl:         ""
+baseurl:         /
 
 author:
   name:           'John Vallis'

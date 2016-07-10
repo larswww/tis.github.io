@@ -4,6 +4,7 @@ title: Greg Nance of ChaseFuture
 guest: Greg Nance
 description: One of Shanghai's most inspiring entrepreneurs on the challenges of launching a company  Nance. ChaseFuture is an online, mentorship-based, university admissions preparatory service, and Greg is it’s founder and fearless leader. If you want to dramatically increase your chances of getting into the University and/or program of you choice, be sure to check out ChaseFuture. As for Greg, he’s not really that impressive at all…of course, I’m kidding. Greg is rare bird, in the best way possible. Sharp as a tack, brimming with confidence, passion, and enthusiasm, Greg is one of those people who after speaking with him, you feel an energy, a charge and an optimism to go out and just Carpe the damn Diem! As intelligent as Greg is, he also has another common attribute with many of the great entrepreneur
 logo: chase-future-logo.jpeg
+episodeLink: http://traffic.libsyn.com/techinshanghai/Grant_Horsfield_of_naked.mp3
 episode: 21
 date: 20/1/2016
 time: 1h 14min

@@ -7,7 +7,9 @@ $dark: #2B2D42;
 $green: #8D99AE;
 $light: #EDF2F4;
 $logoPink: #ED1212;
-$pink: #D90429;
+$pink: #D20C0E;
+$grey: #9a9a9a;
+//$pink: #D90429;
 
 $main: #fff;
 $sidebarColor: grey;
@@ -23,11 +25,15 @@ h1, h2, h3, h4, h5, h6 {
   color: $pink;
 font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 & a {
-  color: $pink;
+  color: $logoPink;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 }
 
+.page-title, .post-title, .post-title a {
+    /* color: #caad00; */
+    color: $pink;
+}
 
 body {
   color: $dark;
@@ -38,13 +44,28 @@ body {
   color: $main;
   background-color: $dark;
   background-image: url(../images/sidebar-tile.png);
+  background-position: center;
+  background-attachment: fixed;
+  border-right: 1px solid $grey;
   & a {
     color: $main;
   }
 
-  & i {
-    margin-right: 5px;
+  & ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
   }
+}
+
+.sidebar-about {
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+}
+
+i {
+  margin-right: 5px;
 }
 
 .logo {
@@ -53,6 +74,14 @@ body {
   display: block;
   width:200px;
   height: 92px;
+}
+.lead {
+  font-size: 18px;
+  text-align: center;
+}
+
+.itunes img {
+  margin: 0 auto;
 }
 
 a {
@@ -66,6 +95,8 @@ a {
 // episode list
 
 
+
+
 // group clearfix
 .group:before, .group:after {
   content: "";
@@ -77,24 +108,165 @@ clear: both;
 .group {
 zoom: 1; /* IE6&7 */ }
 
+article.latest-ep {
+  padding: 20px;
+  border-bottom: 1px solid lighten($grey, 20%);
+
+& .episode-sub ul {
+  padding-left: 0px;
+}
+
+.crop {
+  height: 240px;
+  width: 220px;
+  float: left;
+  padding-left: 0px;
+  margin-right: 5px;
+  overflow: hidden;
+  position: relative;
+  border-right: 1px solid lighten($grey, 20%);
+
+}
+
+& img {
+  float: left;
+}
+
+}
+
 
 article.episodes {
   display: block;
-  img {
-    float: left;
-  }
-  .crop {
-    height: 100px;
-    width: 150px;
-    overflow: hidden;
-    img {
-      height: auto;
-      width: 130px;
+  border-bottom: 1px solid lighten($grey, 20%);
+  &.group {
+    margin-top: 40px;
+    p {
+      clear: both;
+      margin-top: 10px;
     }
   }
 
-  li {
-    display: inline-block;
+  h3 {
+    margin: 0;
   }
 
+  .episode-sub li {
+    color: $grey;
+    font-size: 14px;
+    margin-right: 15px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    border: 1px $grey;
+  }
+  .crop {
+    height: 62px;
+    width: 130px;
+    margin-right: 20px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid $grey;
+    & img {
+    position: absolute;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    }
+  }
+
+
+
+}
+
+.episode-sub li {
+  color: $grey;
+  font-size: 14px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+audio {
+  width: 100%;
+}
+
+.navButton {
+  display: block;
+  width: 30px;
+  padding: 4px;
+  border: 4px;
+}
+
+.itunes img {
+  margin-top:25px;
+}
+
+@media screen and (max-width: 48em) {
+  .content.container {
+    padding-top: 0px;
+  }
+
+  article.episodes {
+    & .crop {
+      width: 5em;
+    }
+
+    & ul {
+      clear: both;
+    }
+
+  }
+
+
+
+  .navButton {
+    display: block;
+
+    & i {
+      position: absolute;
+      top: 25px;
+      left: 20px;
+      font-size: 40px;
+    }
+  }
+
+  .lead {
+    font-size: 16px;
+    text-align: center;
+  }
+
+
+
+  .sidebar ul li {
+    display: inline;
+  }
+
+  .sidebar {
+    padding-bottom: 5px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .sidebar-about {
+    display: none;
+  }
+
+nav.show {
+  display: block;
+}
+
+}
+
+@media screen and (min-width: 48em) {
+  .navButton {
+    display: none;
+  }
 }

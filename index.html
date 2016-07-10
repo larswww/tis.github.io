@@ -4,10 +4,24 @@ title: Home
 ---
 {% for post in site.posts limit:1 %}
 <article class='latest-ep'>
-  <h2><a href="#">{{ post.title }}</a></h2>
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
-<img src='{{ site.url }}public/images/logos/{{ post.logo }}' alt='{{ post.alt }}'>
-<p>{{ post.description }} <a href='#'>More..</a> </p>
+<img src='{{ site.url }}public/images/{{ post.mainImage }}' alt='{{ post.alt }}' />
+
+<ul class='episode-sub'>
+  <li>
+    <i class="fa fa-calendar" aria-hidden="true"></i>{{ post.date | date: '%B %d, %Y' }}
+  </li>
+  <li>
+    <i class="fa fa-clock-o" aria-hidden="true"></i>{{ post.time }}
+  </li>
+</ul>
+
+<p>{{ post.description | truncatewords: 51 }} <a href='{{ site.url }}'>More</a> </p>
+
+<audio controls>
+  <source src='{{ page.episodeLink }}' type='audio/mpeg' />
+</audio>
 </article>
 {% endfor %}
 
@@ -15,37 +29,29 @@ title: Home
 <div class='episodes'>
   {% for post in site.posts offset:1 %}
   <article class='episodes group'>
-    <span class='crop'>
-  <img src='{{ site.url }}public/images/logos/{{ post.logo }}' alt='{{ post.alt }}'>
-  </span>
+
+    <ul class='crop'>
+      <li class='crop'>
+    <img src='{{ site.url }}public/images/logos/{{ post.logo }}' alt='{{ post.alt }}'>
+  </li>
+
+    </ul>
 
   <h3 class='post-title'><a href="{{ post.url }}">{{ post.title }}</a></h3>
-  <ul>
-    <li class="guest">
-      {{ post.guest }}
+  <ul class='episode-sub'>
+    <li>
+      <i class="fa fa-calendar" aria-hidden="true"></i>{{ post.date | date: '%B %d, %Y' }}
     </li>
-    <li class="date">
-      {{ post.date | date: '%B %d, %Y' }}
+    <li>
+      <i class="fa fa-clock-o" aria-hidden="true"></i>{{ post.time }}
     </li>
   </ul>
   <p>
-  {{ post.description | truncatewords: 30 }} <a href="#">more</a>
+  {{ post.description | truncatewords: 30 }} <a href='{{ site.url }}{{ post.url | remove_first: '/'}}'>More</a>
   </p>
-  <ul>
-    <li>
-      {{ post.time }}
-    </li>
-    <li>
-      <a href='{{ site.url }}{{ post.url | remove_first: '/'}}'>Play Episode</a>
-    </li>
-  </ul>
-
   </article>
   {% endfor %}
 </div>
-
-
-
 
 
 <div class="pagination">

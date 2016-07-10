@@ -1,30 +1,49 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
+
+
     <div class="sidebar-about">
       <a href="{{ site.baseurl }}" class="logo">
           {{ site.title }}
         </a>
-      <p class="lead">{{ site.description }}</p>
     </div>
-    <nav class="sidebar-nav">
+
+    <div class='lead'>
+      <p class="lead">{{ site.tagline }}</p>
+
+    </div>
+
+
+<div class='navButton'>
+  <i class="fa fa-bars" aria-hidden="true" onclick='menuButton()'></i>
+</div>
+
+
+    <nav id='menu' class="sidebar-nav">
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
       <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/master.zip"><i class="fa fa-cloud-download" aria-hidden="true"></i>Download</a>
       <a class='sidebar-nav-item' href='#'><i class="fa fa-weixin" aria-hidden="true"></i>WeChat</a>
       <a class='sidebar-nav-item' href='#'><i class="fa fa-envelope" aria-hidden="true"></i>john@techinshanghai.com</a>
       <a class='sidebar-nav-item' href='#'><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a>
       <a class='sidebar-nav-item' href='#'><i class="fa fa-twitter-square" aria-hidden="true"></i>@techinshanghai</a>
-
-
-
-
-      <hr>
-      <a href="#">
-      <img src="{{ site.baseurl }}/public/images/get-on-itunes.svg" alt="subscribe on iTunes" />
-</a>
-
-
+      <a href="#" class='itunes'>
+      <img src="{{ site.baseurl }}public/images/get-on-itunes.svg" alt="subscribe on iTunes" />
+      </a>
     </nav>
 
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    <script>
+
+function menuButton(){
+  var theMenu = document.getElementById("menu");
+
+  if (theMenu.className === 'sidebar-nav'){
+    theMenu.className = theMenu.className += ' show';
+  } else {
+    theMenu.className = 'sidebar-nav';
+  }
+}
+    </script>
+
+
   </div>
 </div>

@@ -2,8 +2,10 @@
 layout: post
 title: Mark Secchia of Sherpa's
 logo: sherpas-logo.jpeg
-description: Welcome back everyone to another episode of the Tech in Shanghai podcast. This week on the show I had the very good fortune to speak with a legend of the Shanghai entrepreneurial community, and an all around nice guy, Mr. Mark Secchia, founder of the extremely well known Shanghai food-delivery service Sherpa’s. Mark initially thought it was a bit odd that I wanted to have him on the podcast, 
+comments: true
+description: Welcome back everyone to another episode of the Tech in Shanghai podcast. This week on the show I had the very good fortune to speak with a legend of the Shanghai entrepreneurial community, and an all around nice guy, Mr. Mark Secchia, founder of the extremely well known Shanghai food-delivery service Sherpa’s. Mark initially thought it was a bit odd that I wanted to have him on the podcast,
 guestURL: www.sherpa.com.cn
+episodeLink: http://traffic.libsyn.com/techinshanghai/Grant_Horsfield_of_naked.mp3
 episode: 20
 date: 26/11/2015
 time: 1h 56min
